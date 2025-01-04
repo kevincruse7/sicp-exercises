@@ -8,10 +8,10 @@
         (else (sum-of-squares x y))))
 
 (proc 1 2 3)
-; 13
+; `13`
 
 (proc 3 2 4)
-; 25
+; `25`
 
 (proc 4 5 3)
-; 41
+; `41`

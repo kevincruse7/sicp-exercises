@@ -8,7 +8,7 @@
 ; If `b` is negative, subtraction is used.
 
 (a-plus-abs-b 1 2)
-; 3
+; `3`
 
 (a-plus-abs-b 1 -2)
-; 3
+; `3`

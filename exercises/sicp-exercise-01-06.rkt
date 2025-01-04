@@ -13,7 +13,8 @@
                      x)))
 
 ; Because we have an applicate-order interpreter, and because we're not using the `if` special form,
-; attempting to compute square roots with this program will result in infinite recursion, as all
+; attempting to compute square roots with this procedure will result in infinite recursion, as all
 ; operands are evaluated before being passed to the new-if procedure.
 
-(sqrt-iter 1 4)
+(sqrt-iter 1.0 4)
+; Never terminates
