@@ -12,7 +12,7 @@
           (sqrt-iter (improve guess x)
                      x)))
 
-; Because we have an applicate-order interpreter, and because we're not using the if special form,
+; Because we have an applicate-order interpreter, and because we're not using the `if` special form,
 ; attempting to compute square roots with this program will result in infinite recursion, as all
 ; operands are evaluated before being passed to the new-if procedure.
 
