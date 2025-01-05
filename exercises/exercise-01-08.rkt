@@ -2,7 +2,7 @@
 
 (#%require "../libraries/chapter-01.rkt")
 
-(define (good-enough? guess prev-guess x)
+(define (good-enough? guess prev-guess)
   (< (/ (abs (- guess prev-guess))
         guess)
      0.0001))
@@ -13,7 +13,7 @@
      3))
 
 (define (cube-root-iter guess prev-guess x)
-  (if (good-enough? guess prev-guess x)
+  (if (good-enough? guess prev-guess)
       guess
       (cube-root-iter (improve guess x)
                       guess
