@@ -1,6 +1,6 @@
 #lang sicp
 
-(#%require "../libraries/sicp-library-01.rkt")
+(#%require "../libraries/chapter-01.rkt")
 
 (define (new-if predicate then-clause else-clause)
   (cond (predicate then-clause)

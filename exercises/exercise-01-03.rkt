@@ -1,6 +1,6 @@
 #lang sicp
 
-(#%require "../libraries/sicp-library-01.rkt")
+(#%require "../libraries/chapter-01.rkt")
 
 (define (proc x y z)
   (cond ((and (< x y) (< x z)) (sum-of-squares y z))

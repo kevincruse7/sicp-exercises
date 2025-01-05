@@ -1,6 +1,6 @@
 #lang sicp
 
-(#%require "../libraries/sicp-library-01.rkt")
+(#%require "../libraries/chapter-01.rkt")
 
 ; By using a static threshold of `0.001`, the `good-enough?` procedure will prove ineffetcive for both
 ; very small and very large numbers. With very small numbers, the threshold will be too large,
@@ -16,14 +16,17 @@
 (good-enough? 10000000000.1 100000000002000000000.01)
 ; `#f`
 
-(define (new-good-enough? guess prev-guess x)
-  (< (/ (abs (- guess prev-guess)) guess)
+(define (new-good-enough? guess prev-guess)
+  (< (/ (abs (- guess prev-guess))
+        guess)
       0.0001))
 
 (define (sqrt-iter guess prev-guess x)
-  (if (new-good-enough? guess prev-guess x)
+  (if (new-good-enough? guess prev-guess)
       guess
-      (sqrt-iter (improve guess x) guess x)))
+      (sqrt-iter (improve guess x)
+                 guess
+                 x)))
 
 (define (sqrt x)
   (sqrt-iter 1.0 x x))
