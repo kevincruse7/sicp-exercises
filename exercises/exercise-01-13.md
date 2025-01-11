@@ -2,11 +2,13 @@ Let $\phi$, $\psi$, and $Fib(n)$ be defined as such:
 
 ```math
 \displaystyle
+\begin{array}{c}
 \phi = \frac{1 + \sqrt{5}}{2} \\[2ex]
 \psi = \frac{1 - \sqrt{5}}{2} \\[4ex]
 Fib(0) = 0 \\[4ex]
 Fib(1) = 1 \\[4ex]
 Fib(n) = Fib(n - 1) + Fib(n - 2), \: \forall n \in \mathbb{Z} \mid n > 1
+\end{array}
 ```
 
 Observe the following property of $\phi$ and $\psi$:
@@ -40,8 +42,10 @@ Let us assume the following relations:
 
 ```math
 \displaystyle
+\begin{array}{c}
 Fib(n - 1) = \frac{\phi^{n - 1} - \psi^{n - 1}}{\sqrt{5}} \\[2ex]
 Fib(n - 2) = \frac{\phi^{n - 2} - \psi^{n - 2}}{\sqrt{5}}
+\end{array}
 ```
 
 With the assumed relations, we can observe the following:
