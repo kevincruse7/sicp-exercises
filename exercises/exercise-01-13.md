@@ -7,7 +7,7 @@ Let $\phi$, $\psi$, and $Fib(n)$ be defined as such:
 \psi = \frac{1 - \sqrt{5}}{2} \\[4ex]
 Fib(0) = 0 \\[4ex]
 Fib(1) = 1 \\[4ex]
-Fib(n) = Fib(n - 1) + Fib(n - 2), \: \forall n \in \mathbb{Z} \mid n > 1 \\[4ex]
+Fib(n) = Fib(n - 1) + Fib(n - 2), \: \forall n \in \mathbb{Z} \mid n > 1
 \end{array}
 ```
 
@@ -21,7 +21,7 @@ Observe the following property of $\phi$ and $\psi$:
 &= \frac{6 + 2\sqrt{5}}{4} &&= \frac{6 - 2\sqrt{5}}{4} \\[2ex]
 &= \frac{3 + \sqrt{5}}{2} &&= \frac{3 - \sqrt{5}}{2} \\[2ex]
 &= \frac{1 + \sqrt{5}}{2} + 1 &&= \frac{1 - \sqrt{5}}{2} + 1 \\[4ex]
-&= \phi + 1 &&= \psi + 1 \\[4ex]
+&= \phi + 1 &&= \psi + 1
 \end{aligned}
 ```
 
@@ -34,7 +34,7 @@ Now, observe the following relations between $\phi$, $\psi$, and $Fib(n)$:
 &= 0 &&= \frac{1 + \sqrt{5} - (1 - \sqrt{5})}{2\sqrt{5}} \\[2ex]
 &= Fib(0) &&= \frac{2\sqrt{5}}{2\sqrt{5}} \\[4ex]
 &&&= 1 \\[4ex]
-&&&= Fib(1) \\[4ex]
+&&&= Fib(1)
 \end{aligned}
 ```
 
@@ -44,7 +44,7 @@ Let us assume the following relations:
 \displaystyle
 \begin{array}{c}
 Fib(n - 1) = \frac{\phi^{n - 1} - \psi^{n - 1}}{\sqrt{5}} \\[2ex]
-Fib(n - 2) = \frac{\phi^{n - 2} - \psi^{n - 2}}{\sqrt{5}} \\[2ex]
+Fib(n - 2) = \frac{\phi^{n - 2} - \psi^{n - 2}}{\sqrt{5}}
 \end{array}
 ```
 
@@ -59,7 +59,7 @@ Fib(n) &= Fib(n - 1) + Fib(n - 2) \\[2ex]
 &= \frac{\phi^{n - 1} + \phi^{n - 2} - (\psi^{n - 1}  + \psi^{n - 2})}{\sqrt{5}} \\[2ex]
 &= \frac{\phi^{n - 2}(\phi + 1) - \psi^{n - 2}(\psi + 1)}{\sqrt{5}} \\[2ex]
 &= \frac{\phi^{n - 2}(\phi^2) - \psi^{n - 2}(\psi^2)}{\sqrt{5}} \\[2ex]
-&= \frac{\phi^n - \psi^n}{\sqrt{5}} \\[2ex]
+&= \frac{\phi^n - \psi^n}{\sqrt{5}}
 \end{aligned}
 ```
 
@@ -72,7 +72,7 @@ Let us now observe the following property of $\psi$:
 \begin{aligned}
 \left| \frac{\psi^0}{\sqrt{5}} \right| &= \left| \frac{1}{\sqrt{5}} \right| \\[2ex]
 &= \frac{1}{\sqrt{5}} \\[2ex]
-&< \frac{1}{2} \\[2ex]
+&< \frac{1}{2}
 \end{aligned}
 ```
 
@@ -85,7 +85,7 @@ Assuming that $\left| \frac{\psi^{n - 1}}{\sqrt{5}} \right| < \frac{1}{2}$, let 
 &= |\psi| \cdot {\left| \frac{\psi^{n - 1}}{\sqrt{5}} \right|} \\[2ex]
 &< {\left| \frac{1 - \sqrt{5}}{2} \right|} \cdot \frac{1}{2} \\[2ex]
 &< 0.618... \cdot \frac{1}{2} \\[2ex]
-&< \frac{1}{2} \\[2ex]
+&< \frac{1}{2}
 \end{aligned}
 ```
 
