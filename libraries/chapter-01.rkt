@@ -19,3 +19,11 @@
 (#%provide good-enough?)
 (define (good-enough? guess x)
   (< (abs (- (square guess) x)) 0.001))
+
+(#%provide double)
+(define (double x)
+  (* x 2))
+
+(#%provide halve)
+(define (halve x)
+  (/ x 2))
