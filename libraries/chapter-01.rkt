@@ -27,3 +27,21 @@
 (#%provide halve)
 (define (halve x)
   (/ x 2))
+
+(#%provide smallest-divisor)
+(define (smallest-divisor n)
+  (find-divisor n 2))
+
+(#%provide find-divisor)
+(define (find-divisor n test-divisor)
+  (cond ((> (square test-divisor) n) n)
+        ((divides? test-divisor n) test-divisor)
+        (else (find-divisor n (+ test-divisor 1)))))
+
+(#%provide divides?)
+(define (divides? a b)
+  (= (remainder b a) 0))
+
+(#%provide prime?)
+(define (prime? n)
+  (= n (smallest-divisor n)))
