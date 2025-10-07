@@ -1,5 +1,7 @@
 #lang sicp
 
+; 1.1.4 - Compound Procedures
+
 (#%provide square)
 (define (square x)
   (* x x))
@@ -7,6 +9,8 @@
 (#%provide sum-of-squares)
 (define (sum-of-squares x y)
   (+ (square x) (square y)))
+
+; 1.1.7 - Example: Square Roots by Newton's Method
 
 (#%provide average)
 (define (average x y)
@@ -20,6 +24,8 @@
 (define (good-enough? guess x)
   (< (abs (- (square guess) x)) 0.001))
 
+; 1.2.4 - Exponentiation
+
 (#%provide double)
 (define (double x)
   (* x 2))
@@ -27,6 +33,8 @@
 (#%provide halve)
 (define (halve x)
   (/ x 2))
+
+; 1.2.6 - Example: Testing for Primality
 
 (#%provide divides?)
 (define (divides? a b)
@@ -67,3 +75,21 @@
   (cond ((= times 0) true)
         ((fermat-test n) (fast-prime? n (- times 1)))
         (else false)))
+
+; 1.3.1 - Procedures as Arguments
+
+(#%provide cube)
+(define (cube x) (* x x x))
+
+(#%provide sum)
+(define (sum term a next b)
+  (if (> a b)
+      0
+      (+ (term a)
+         (sum term (next a) next b))))
+
+(#%provide integral)
+(define (integral f a b dx)
+  (define (add-dx x) (+ x dx))
+  (* (sum f (+ a (/ dx 2.0)) add-dx b)
+     dx))
