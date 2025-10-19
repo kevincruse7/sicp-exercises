@@ -34,6 +34,13 @@
 (define (halve x)
   (/ x 2))
 
+; 1.2.5 - Greatest Common Divisors
+
+(define (gcd a b)
+  (if (= b 0)
+      a
+      (gcd b (remainder a b))))
+
 ; 1.2.6 - Example: Testing for Primality
 
 (#%provide divides?)
