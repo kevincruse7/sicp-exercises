@@ -16,4 +16,3 @@ By following the evaluation rules for Scheme, we can observe that this program e
 ```
 
 Since the literal `2` isn't a valid operator in Scheme, this program will produce an error.
-
