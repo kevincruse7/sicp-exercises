@@ -1,8 +1,8 @@
 # Exercise 1.13
 
-Let $\phi$, $\psi$, and $Fib(n)$ be defined as such:\
+Let $\phi$, $\psi$, and $Fib(n)$ be defined as such:
 
-$$
+```math
 \begin{gather*}
 
 \phi = \frac{1 + \sqrt{5}}{2} \\[1.5em]
@@ -16,7 +16,7 @@ Fib(1) = 1 \\[1.5em]
 Fib(n) = Fib(n - 1) + Fib(n - 2), \: \forall{n} \in \mathbb{Z} \mid n > 1
 
 \end{gather*}
-$$
+```
 
 Observe the following property of $\phi$ and $\psi$:
 
