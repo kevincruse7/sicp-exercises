@@ -15,8 +15,8 @@
 By explicitly multiplying `(expmod base (/ exp 2) m)` with itself instead of passing it to `square`, you generate an
 extra call to `expmod` per invocation. Before, the recurrence relation could be expressed as:
 
-$$
-\begin{align*}
+```math
+\begin{aligned}
 
 T(n) &= \Theta(1) + T{\left(\frac{n}{2}\right)} \\[1.5em]
 
@@ -30,13 +30,13 @@ T(n) &= \Theta(1) + T{\left(\frac{n}{2}\right)} \\[1.5em]
 
 &= \Theta(\log{n})
 
-\end{align*}
-$$
+\end{aligned}
+```
 
 By introducing an extra invocation of `expmod`, the recurrence relation now looks like:
 
 ```math
-\begin{align*}
+\begin{aligned}
 
 T(n) &= \Theta(1) + 2T{\left(\frac{n}{2}\right)} \\[1.5em]
 
@@ -50,5 +50,5 @@ T(n) &= \Theta(1) + 2T{\left(\frac{n}{2}\right)} \\[1.5em]
 
 &= \Theta(n)
 
-\end{align*}
+\end{aligned}
 ```

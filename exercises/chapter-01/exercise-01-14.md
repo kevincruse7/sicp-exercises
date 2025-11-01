@@ -46,17 +46,17 @@ graph never exceeds $n$ layers.
 
 To determine the order of growth of steps for `count-change`, we can analyze the following recurrence relation:
 
-$$
+```math
 T(n, k) = T(n, k - 1) + T(n - f(k), k)
-$$
+```
 
 In this relation, $n$ is the amount being changed, $k$ is the kinds of coins, and $f$ is the mapping between kinds of
 coins and the value of the first denomination.
 
 For $k = 1$, we can see:
 
-$$
-\begin{align*}
+```math
+\begin{aligned}
 
 T(n, 1) &= T(n, 0) + T(n - 1, 1) \\[1.5em]
 
@@ -64,13 +64,13 @@ T(n, 1) &= T(n, 0) + T(n - 1, 1) \\[1.5em]
 
 &= \Theta(n)
 
-\end{align*}
-$$
+\end{aligned}
+```
 
 For $k = 2$:
 
-$$
-\begin{align*}
+```math
+\begin{aligned}
 
 T(n, 2) &= T(n, 1) + T(n - 5, 2) \\[1.5em]
 
@@ -78,13 +78,13 @@ T(n, 2) &= T(n, 1) + T(n - 5, 2) \\[1.5em]
 
 &= \Theta(n^2)
 
-\end{align*}
-$$
+\end{aligned}
+```
 
 For $k = 3$:
 
-$$
-\begin{align*}
+```math
+\begin{aligned}
 
 T(n, 3) &= T(n, 2) + T(n - 10, 3) \\[1.5em]
 
@@ -92,13 +92,13 @@ T(n, 3) &= T(n, 2) + T(n - 10, 3) \\[1.5em]
 
 &= \Theta(n^3)
 
-\end{align*}
-$$
+\end{aligned}
+```
 
 For $k = 4$:
 
-$$
-\begin{align*}
+```math
+\begin{aligned}
 
 T(n, 4) &= T(n, 3) + T(n - 25, 4) \\[1.5em]
 
@@ -106,13 +106,13 @@ T(n, 4) &= T(n, 3) + T(n - 25, 4) \\[1.5em]
 
 &= \Theta(n^4)
 
-\end{align*}
-$$
+\end{aligned}
+```
 
 And finally, for $k = 5$:
 
-$$
-\begin{align*}
+```math
+\begin{aligned}
 
 T(n, 5) &= T(n, 4) + T(n - 50, 5) \\[1.5em]
 
@@ -120,7 +120,7 @@ T(n, 5) &= T(n, 4) + T(n - 50, 5) \\[1.5em]
 
 &= \Theta(n^5)
 
-\end{align*}
-$$
+\end{aligned}
+```
 
 Therefore, the order of growth of number of steps for `count-change` is $\Theta(n^5)$.
