@@ -2,7 +2,7 @@
 
 Normal-order evaluation:
 
-```scheme
+```scm
 (gcd 206 40)
 
 (if (= 40 0)
@@ -62,7 +62,7 @@ Under normal-order evaluation, `(gcd 206 40)` calls `remainder` 18 times.
 
 Applicative-order evaluation:
 
-```scheme
+```scm
 (gcd 206 40)
 
 (if (= 40 0)

@@ -15,40 +15,40 @@
 By explicitly multiplying `(expmod base (/ exp 2) m)` with itself instead of passing it to `square`, you generate an
 extra call to `expmod` per invocation. Before, the recurrence relation could be expressed as:
 
-```math
-\begin{align*}
+$$
+\begin{aligned}
 
-T(n) &= \Theta(1) + T \left( \frac{n}{2} \right) \\[2ex]
+T(n) &= \Theta(1) + T{\left(\dfrac{n}{2}\right)} \\[1.5em]
 
-&= 2\Theta(1) + T \left( \frac{n}{4} \right) \\[2ex]
+&= 2\Theta(1) + T{\left(\dfrac{n}{4}\right)} \\[1.5em]
 
-&= 3\Theta(1) + T \left( \frac{n}{8} \right) \\[3ex]
+&= 3\Theta(1) + T{\left(\dfrac{n}{8}\right)} \\[1.5em]
 
-&\dots \\[3ex]
+&\dots \\[1.5em]
 
-&= (\log_{2}{n})\Theta(1) \\[3ex]
+&= (\log_{2}{n})\Theta(1) \\[1.5em]
 
 &= \Theta(\log{n})
 
-\end{align*}
-```
+\end{aligned}
+$$
 
 By introducing an extra invocation of `expmod`, the recurrence relation now looks like:
 
 ```math
-\begin{align*}
+\begin{aligned}
 
-T(n) &= \Theta(1) + 2T \left( \frac{n}{2} \right) \\[2ex]
+T(n) &= \Theta(1) + 2T{\left(\dfrac{n}{2}\right)} \\[1.5em]
 
-&= 3\Theta(1) + 4T \left( \frac{n}{4} \right) \\[2ex]
+&= 3\Theta(1) + 4T{\left(\dfrac{n}{4}\right)} \\[1.5em]
 
-&= 7\Theta(1) + 8T \left( \frac{n}{8} \right) \\[3ex]
+&= 7\Theta(1) + 8T{\left(\dfrac{n}{8}\right)} \\[1.5em]
 
-&\dots \\[3ex]
+&\dots \\[1.5em]
 
-&= n\Theta(1) \\[3ex]
+&= n\Theta(1) \\[1.5em]
 
 &= \Theta(n)
 
-\end{align*}
+\end{aligned}
 ```
