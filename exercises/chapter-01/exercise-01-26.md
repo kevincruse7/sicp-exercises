@@ -18,11 +18,11 @@ extra call to `expmod` per invocation. Before, the recurrence relation could be 
 $$
 \begin{align*}
 
-T(n) &= \Theta(1) + T{\left(\dfrac{n}{2}\right)} \\[1.5em]
+T(n) &= \Theta(1) + T{\left(\frac{n}{2}\right)} \\[1.5em]
 
-&= 2\Theta(1) + T{\left(\dfrac{n}{4}\right)} \\[1.5em]
+&= 2\Theta(1) + T{\left(\frac{n}{4}\right)} \\[1.5em]
 
-&= 3\Theta(1) + T{\left(\dfrac{n}{8}\right)} \\[1.5em]
+&= 3\Theta(1) + T{\left(\frac{n}{8}\right)} \\[1.5em]
 
 &\dots \\[1.5em]
 
@@ -38,11 +38,11 @@ By introducing an extra invocation of `expmod`, the recurrence relation now look
 ```math
 \begin{align*}
 
-T(n) &= \Theta(1) + 2T{\left(\dfrac{n}{2}\right)} \\[1.5em]
+T(n) &= \Theta(1) + 2T{\left(\frac{n}{2}\right)} \\[1.5em]
 
-&= 3\Theta(1) + 4T{\left(\dfrac{n}{4}\right)} \\[1.5em]
+&= 3\Theta(1) + 4T{\left(\frac{n}{4}\right)} \\[1.5em]
 
-&= 7\Theta(1) + 8T{\left(\dfrac{n}{8}\right)} \\[1.5em]
+&= 7\Theta(1) + 8T{\left(\frac{n}{8}\right)} \\[1.5em]
 
 &\dots \\[1.5em]
 

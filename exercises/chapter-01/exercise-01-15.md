@@ -22,7 +22,7 @@ The space complexity of `sine` with respect to `angle` ($n$) can be expressed wi
 $$
 \begin{align*}
 
-S(n) &= \Theta(1) + S{\left(\dfrac{n}{3}\right)} \\[1.5em]
+S(n) &= \Theta(1) + S{\left(\frac{n}{3}\right)} \\[1.5em]
 
 &= \Theta(\log{n})
 
@@ -34,7 +34,7 @@ The time complexity of `sine` with respect to `angle` ($n$) can be expressed wit
 $$
 \begin{align*}
 
-T(n) &= \Theta(1) + T{\left(\dfrac{n}{3}\right)} \\[1.5em]
+T(n) &= \Theta(1) + T{\left(\frac{n}{3}\right)} \\[1.5em]
 
 &= \Theta(\log n)
 
