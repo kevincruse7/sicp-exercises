@@ -20,23 +20,23 @@ For `(sine 12.15)`, `p` is applied five times.
 The space complexity of `sine` with respect to `angle` ($n$) can be expressed with the following recurrence relation:
 
 $$
-\begin{aligned}
+\begin{align*}
 
 S(n) &= \Theta(1) + S{\left(\dfrac{n}{3}\right)} \\[1.5em]
 
 &= \Theta(\log{n})
 
-\end{aligned}
+\end{align*}
 $$
 
 The time complexity of `sine` with respect to `angle` ($n$) can be expressed with the following recurrence relation:
 
 $$
-\begin{aligned}
+\begin{align*}
 
 T(n) &= \Theta(1) + T{\left(\dfrac{n}{3}\right)} \\[1.5em]
 
 &= \Theta(\log n)
 
-\end{aligned}
+\end{align*}
 $$

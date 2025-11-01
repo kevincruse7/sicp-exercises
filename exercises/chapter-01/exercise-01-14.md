@@ -56,7 +56,7 @@ coins and the value of the first denomination.
 For $k = 1$, we can see:
 
 $$
-\begin{aligned}
+\begin{align*}
 
 T(n, 1) &= T(n, 0) + T(n - 1, 1) \\[1.5em]
 
@@ -64,13 +64,13 @@ T(n, 1) &= T(n, 0) + T(n - 1, 1) \\[1.5em]
 
 &= \Theta(n)
 
-\end{aligned}
+\end{align*}
 $$
 
 For $k = 2$:
 
 $$
-\begin{aligned}
+\begin{align*}
 
 T(n, 2) &= T(n, 1) + T(n - 5, 2) \\[1.5em]
 
@@ -78,13 +78,13 @@ T(n, 2) &= T(n, 1) + T(n - 5, 2) \\[1.5em]
 
 &= \Theta(n^2)
 
-\end{aligned}
+\end{align*}
 $$
 
 For $k = 3$:
 
 $$
-\begin{aligned}
+\begin{align*}
 
 T(n, 3) &= T(n, 2) + T(n - 10, 3) \\[1.5em]
 
@@ -92,13 +92,13 @@ T(n, 3) &= T(n, 2) + T(n - 10, 3) \\[1.5em]
 
 &= \Theta(n^3)
 
-\end{aligned}
+\end{align*}
 $$
 
 For $k = 4$:
 
 $$
-\begin{aligned}
+\begin{align*}
 
 T(n, 4) &= T(n, 3) + T(n - 25, 4) \\[1.5em]
 
@@ -106,13 +106,13 @@ T(n, 4) &= T(n, 3) + T(n - 25, 4) \\[1.5em]
 
 &= \Theta(n^4)
 
-\end{aligned}
+\end{align*}
 $$
 
 And finally, for $k = 5$:
 
 $$
-\begin{aligned}
+\begin{align*}
 
 T(n, 5) &= T(n, 4) + T(n - 50, 5) \\[1.5em]
 
@@ -120,7 +120,7 @@ T(n, 5) &= T(n, 4) + T(n - 50, 5) \\[1.5em]
 
 &= \Theta(n^5)
 
-\end{aligned}
+\end{align*}
 $$
 
 Therefore, the order of growth of number of steps for `count-change` is $\Theta(n^5)$.

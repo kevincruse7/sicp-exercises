@@ -3,7 +3,7 @@
 Let $\phi$, $\psi$, and $Fib(n)$ be defined as such:
 
 $$
-\begin{gathered}
+\begin{gather*}
 
 \phi = \dfrac{1 + \sqrt{5}}{2} \\[1.5em]
 
@@ -15,13 +15,13 @@ Fib(1) = 1 \\[1.5em]
 
 Fib(n) = Fib(n - 1) + Fib(n - 2), \: \forall{n} \in \mathbb{Z} \mid n > 1
 
-\end{gathered}
+\end{gather*}
 $$
 
 Observe the following property of $\phi$ and $\psi$:
 
 $$
-\begin{aligned}
+\begin{align*}
 
 \phi^2 &= {\left(\dfrac{1 + \sqrt{5}}{2}\right)}^2 \qquad
 &\psi^2 &= {\left(\dfrac{1 - \sqrt{5}}{2}\right)}^2 \\[1.5em]
@@ -36,13 +36,13 @@ $$
 
 &= \phi + 1 &&= \psi + 1
 
-\end{aligned}
+\end{align*}
 $$
 
 Now, observe the following relations between $\phi$, $\psi$, and $Fib(n)$:
 
 $$
-\begin{aligned}
+\begin{align*}
 
 \dfrac{\phi^0 - \psi^0}{\sqrt{5}} &= \dfrac{1 - 1}{\sqrt{5}} \qquad
 &\dfrac{\phi^1 - \psi^1}{\sqrt{5}} &= \dfrac{\dfrac{1 + \sqrt{5}}{2} - \dfrac{1 - \sqrt{5}}{2}}{\sqrt{5}} \\[1.5em]
@@ -55,25 +55,25 @@ $$
 
 &&&= Fib(1)
 
-\end{aligned}
+\end{align*}
 $$
 
 Let us assume the following relations:
 
 $$
-\begin{gathered}
+\begin{gather*}
 
 Fib(n - 1) = \dfrac{\phi^{n - 1} - \psi^{n - 1}}{\sqrt{5}} \\[1.5em]
 
 Fib(n - 2) = \dfrac{\phi^{n - 2} - \psi^{n - 2}}{\sqrt{5}}
 
-\end{gathered}
+\end{gather*}
 $$
 
 With the assumed relations, we can observe the following:
 
 $$
-\begin{aligned}
+\begin{align*}
 
 Fib(n) &= Fib(n - 1) + Fib(n - 2) \\[1.5em]
 
@@ -89,7 +89,7 @@ Fib(n) &= Fib(n - 1) + Fib(n - 2) \\[1.5em]
 
 &= \dfrac{\phi^n - \psi^n}{\sqrt{5}}
 
-\end{aligned}
+\end{align*}
 $$
 
 Therefore, by the principle of induction,
@@ -98,7 +98,7 @@ $Fib(n) = \tfrac{\phi^n - \psi^n}{\sqrt{5}}$, $\forall n \in \mathbb{Z} \mid n \
 Let us now observe the following property of $\psi$:
 
 $$
-\begin{aligned}
+\begin{align*}
 
 {\left|\dfrac{\psi^0}{\sqrt{5}}\right|} &= {\left|\dfrac{1}{\sqrt{5}}\right|} \\[1.5em]
 
@@ -106,13 +106,13 @@ $$
 
 &< \dfrac{1}{2}
 
-\end{aligned}
+\end{align*}
 $$
 
 Assuming that ${\left|\tfrac{\psi^{n - 1}}{\sqrt{5}}\right|} < \tfrac{1}{2}$, let us observe the following:
 
 $$
-\begin{aligned}
+\begin{align*}
 
 {\left|\dfrac{\psi^n}{\sqrt{5}}\right|} &= {\left|\dfrac{\psi(\psi^{n - 1})}{\sqrt{5}}\right|} \\[1.5em]
 
@@ -124,7 +124,7 @@ $$
 
 &< \dfrac{1}{2}
 
-\end{aligned}
+\end{align*}
 $$
 
 Therefore, by the principle of induction, ${\left|\tfrac{\psi^n}{\sqrt{5}}\right|} < \tfrac{1}{2}$,
