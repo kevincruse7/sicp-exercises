@@ -1,6 +1,6 @@
 # Exercise 1.13
 
-Let $\phi$, $\psi$, and $Fib(n)$ be defined as such:
+Let $\phi$, $\psi$, and $Fib(n)$ be defined as such:\
 
 $$
 \begin{gather*}
