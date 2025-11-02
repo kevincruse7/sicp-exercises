@@ -114,3 +114,25 @@
           next
           (try next))))
   (try first-guess))
+
+; 1.3.4 - Procedures as Returned Values
+
+(#%provide average-damp)
+(define (average-damp f)
+  (lambda (x) (average x (f x))))
+
+(#%provide deriv)
+(define (deriv g)
+  (define dx 0.00001)
+  (lambda (x)
+    (/ (- (g (+ x dx)) (g x))
+       dx)))
+
+(#%provide newton-transform)
+(define (newton-transform g)
+  (lambda (x)
+    (- x (/ (g x) ((deriv g) x)))))
+
+(#%provide newtons-method)
+(define (newtons-method g guess)
+  (fixed-point (newton-transform g) guess))
