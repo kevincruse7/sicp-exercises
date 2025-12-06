@@ -1,0 +1,3 @@
+/.racket/[[:digit:]]*.[[:digit:]]*/
+/.racket/bin/
+/libraries/compiled/
