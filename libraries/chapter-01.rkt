@@ -87,6 +87,8 @@
       (+ (term a)
          (sum term (next a) next b))))
 
+(define (inc n) (+ n 1))
+
 (define (integral f a b dx)
   (define (add-dx x) (+ x dx))
   (* (sum f (+ a (/ dx 2.0)) add-dx b)
