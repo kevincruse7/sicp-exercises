@@ -23,8 +23,8 @@ Observe the following property of $\phi$ and $\psi$:
 ```math
 \begin{aligned}
 
-\phi^2 &= {\left(\frac{1 + \sqrt{5}}{2}\right)}^2 \qquad
-&\psi^2 &= {\left(\frac{1 - \sqrt{5}}{2}\right)}^2 \\[1.5em]
+\phi^2 &= {\left(\frac{1 + \sqrt{5}}{2}\right)}^2
+\qquad &\psi^2 &= {\left(\frac{1 - \sqrt{5}}{2}\right)}^2 \\[1.5em]
 
 &= \frac{1 + 2\sqrt{5} + 5}{4} &&= \frac{1 - 2\sqrt{5} + 5}{4} \\[1.5em]
 
@@ -44,8 +44,8 @@ Now, observe the following relations between $\phi$, $\psi$, and $Fib(n)$:
 ```math
 \begin{aligned}
 
-\frac{\phi^0 - \psi^0}{\sqrt{5}} &= \frac{1 - 1}{\sqrt{5}} \qquad
-&\frac{\phi^1 - \psi^1}{\sqrt{5}} &= \frac{\frac{1 + \sqrt{5}}{2} - \frac{1 - \sqrt{5}}{2}}{\sqrt{5}} \\[1.5em]
+\frac{\phi^0 - \psi^0}{\sqrt{5}} &= \frac{1 - 1}{\sqrt{5}}
+\qquad &\frac{\phi^1 - \psi^1}{\sqrt{5}} &= \frac{\frac{1 + \sqrt{5}}{2} - \frac{1 - \sqrt{5}}{2}}{\sqrt{5}} \\[1.5em]
 
 &= 0 &&= \frac{1 + \sqrt{5} - (1 - \sqrt{5})}{2\sqrt{5}} \\[1.5em]
 
@@ -127,10 +127,6 @@ Assuming that ${\left|\frac{\psi^{n - 1}}{\sqrt{5}}\right|} < \frac{1}{2}$, let 
 \end{aligned}
 ```
 
-Therefore, by the principle of induction, ${\left|\frac{\psi^n}{\sqrt{5}}\right|} < \frac{1}{2}$,
-$\forall n \in \mathbb{Z} \mid n \ge 0$.
+Therefore, by the principle of induction, ${\left|\frac{\psi^n}{\sqrt{5}}\right|} < \frac{1}{2}$, $\forall n \in \mathbb{Z} \mid n \ge 0$.
 
-Therefore, since $Fib(n)$ is always an integer, since $Fib(n) = \frac{\phi^n - \psi^n}{\sqrt{5}}$,
-$\forall n \in \mathbb{Z} \mid n \ge 0$, and since ${\left|\frac{\psi^n}{\sqrt{5}}\right|} < \frac{1}{2}$,
-$\forall n \in \mathbb{Z} \mid n \ge 0$, $Fib(n)$ must be the closest integer to $\frac{\phi^n}{\sqrt{5}}$,
-$\forall n \in \mathbb{Z} \mid n \ge 0$.
+Therefore, since $Fib(n)$ is always an integer, since $Fib(n) = \frac{\phi^n - \psi^n}{\sqrt{5}}$, $\forall n \in \mathbb{Z} \mid n \ge 0$, and since ${\left|\frac{\psi^n}{\sqrt{5}}\right|} < \frac{1}{2}$, $\forall n \in \mathbb{Z} \mid n \ge 0$, $Fib(n)$ must be the closest integer to $\frac{\phi^n}{\sqrt{5}}$, $\forall n \in \mathbb{Z} \mid n \ge 0$.

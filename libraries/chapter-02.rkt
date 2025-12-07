@@ -1,22 +1,22 @@
 #lang sicp
 
+(#%require "./chapter-01.rkt")
+
+(#%provide (all-from "./chapter-01.rkt"))
+(#%provide (all-defined))
+
 ; 2.1.1 - Example: Arithmetic Operations for Rational Numbers
 
-(#%provide make-rat)
 (define (make-rat n d)
   (let ((g (gcd n d)))
-    (cons (/ ((if (> (* n d) 0) + -) (abs n)) g)
-          (/ (abs d) g))))
+    (cons (/ n g) (/ d g))))
 
-(#%provide numer)
 (define (numer x)
   (car x))
 
-(#%provide denom)
 (define (denom x)
   (cdr x))
 
-(#%provide print-rat)
 (define (print-rat x)
   (newline)
   (display (numer x))

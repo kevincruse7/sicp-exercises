@@ -12,8 +12,7 @@
                     m))))
 ```
 
-By explicitly multiplying `(expmod base (/ exp 2) m)` with itself instead of passing it to `square`, you generate an
-extra call to `expmod` per invocation. Before, the recurrence relation could be expressed as:
+By explicitly multiplying `(expmod base (/ exp 2) m)` with itself instead of passing it to `square`, you generate an extra call to `expmod` per invocation. Before, the recurrence relation could be expressed as:
 
 ```math
 \begin{aligned}

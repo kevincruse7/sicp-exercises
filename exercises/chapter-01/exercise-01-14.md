@@ -41,8 +41,7 @@ flowchart TD
     cc1105 <-- 0 --> cc-3905["(cc -39 5)"]
 ```
 
-With respect to the amount being changed, the order of growth of space for `count-change` is $\Theta(n)$, as the call
-graph never exceeds $n$ layers.
+With respect to the amount being changed, the order of growth of space for `count-change` is $\Theta(n)$, as the call graph never exceeds $n$ layers.
 
 To determine the order of growth of steps for `count-change`, we can analyze the following recurrence relation:
 
@@ -50,8 +49,7 @@ To determine the order of growth of steps for `count-change`, we can analyze the
 T(n, k) = T(n, k - 1) + T(n - f(k), k)
 ```
 
-In this relation, $n$ is the amount being changed, $k$ is the kinds of coins, and $f$ is the mapping between kinds of
-coins and the value of the first denomination.
+In this relation, $n$ is the amount being changed, $k$ is the kinds of coins, and $f$ is the mapping between kinds of coins and the value of the first denomination.
 
 For $k = 1$, we can see:
 
