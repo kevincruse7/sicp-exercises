@@ -22,3 +22,22 @@
   (display (numer x))
   (display "/")
   (display (denom x)))
+
+; 2.1.4 - Extended Exercise: Interval Arithmetic
+
+(define (make-interval a b)
+  (cons a b))
+
+(define (lower-bound interval)
+  (car interval))
+
+(define (upper-bound interval)
+  (cdr interval))
+
+(define (print-interval interval)
+  (newline)
+  (display "[")
+  (display (lower-bound interval))
+  (display ",")
+  (display (upper-bound interval))
+  (display "]"))
