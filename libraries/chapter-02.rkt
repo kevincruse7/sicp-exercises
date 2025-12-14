@@ -75,3 +75,9 @@
   (/ (- (upper-bound i) (lower-bound i))
      (+ (upper-bound i) (lower-bound i))
      0.01))
+
+(define (map proc items)
+  (if (null? items)
+      nil
+      (cons (proc (car items))
+            (map proc (cdr items)))))
