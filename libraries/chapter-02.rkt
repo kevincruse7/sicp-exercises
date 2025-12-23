@@ -76,6 +76,8 @@
      (+ (upper-bound i) (lower-bound i))
      0.01))
 
+; 2.2.1 - Representing Sequences
+
 (define (map proc items)
   (if (null? items)
       nil
