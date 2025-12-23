@@ -78,6 +78,11 @@
 
 ; 2.2.1 - Representing Sequences
 
+(define (append list1 list2)
+  (if (null? list1)
+      list2
+      (cons (car list1) (append (cdr list1) list2))))
+
 (define (map proc items)
   (if (null? items)
       nil
