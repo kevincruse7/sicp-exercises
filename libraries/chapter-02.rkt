@@ -88,3 +88,11 @@
       nil
       (cons (proc (car items))
             (map proc (cdr items)))))
+
+; 2.2.3 - Sequences as Conventional Interfaces
+
+(define (accumulate op initial sequence)
+  (if (null? sequence)
+      initial
+      (op (car sequence)
+          (accumulate op initial (cdr sequence)))))
