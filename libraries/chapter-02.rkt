@@ -1,7 +1,9 @@
 #lang sicp
 
+(#%require sicp-pict)
 (#%require "./chapter-01.rkt")
 
+(#%provide (all-from sicp-pict))
 (#%provide (all-from "./chapter-01.rkt"))
 (#%provide (all-defined))
 
