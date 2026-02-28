@@ -140,3 +140,14 @@
 
 (define (flatmap proc seq)
   (accumulate append nil (map proc seq)))
+
+; 2.2.4 - Example: A Picture Language
+
+(define (make-vect xcor ycor)
+  (list xcor ycor))
+
+(define (xcor-vect vect)
+  (car vect))
+
+(define (ycor-vect vect)
+  (cadr vect))
