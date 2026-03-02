@@ -78,32 +78,6 @@
      (+ (upper-bound i) (lower-bound i))
      0.01))
 
-; 2.2.1 - Representing Sequences
-
-(define (length items)
-  (if (null? items)
-      0
-      (+ 1 (length (cdr items)))))
-
-(define (append list1 list2)
-  (if (null? list1)
-      list2
-      (cons (car list1) (append (cdr list1) list2))))
-
-(define (map proc items)
-  (if (null? items)
-      nil
-      (cons (proc (car items))
-            (map proc (cdr items)))))
-
-(define (for-each proc items)
-  (define (helper)
-    (proc (car items))
-    (for-each proc (cdr items)))
-  (if (null? items)
-      true
-      (helper)))
-
 ; 2.2.3 - Sequences as Conventional Interfaces
 
 (define (filter predicate sequence)

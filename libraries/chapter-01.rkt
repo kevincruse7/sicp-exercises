@@ -10,13 +10,6 @@
 (define (sum-of-squares x y)
   (+ (square x) (square y)))
 
-; 1.1.6 - Conditional Expressions and Predicates
-
-(define (abs x)
-  (if (< x 0)
-      (- x)
-      x))
-
 ; 1.1.7 - Example: Square Roots by Newton's Method
 
 (define (average x y)
@@ -27,20 +20,6 @@
 
 (define (good-enough? guess x)
   (< (abs (- (square guess) x)) 0.001))
-
-; 1.2.4 - Exponentiation
-
-(define (expt b n)
-  (if (= n 0)
-      1
-      (* b (expt b (- n 1)))))
-
-; 1.2.5 - Greatest Common Divisors
-
-(define (gcd a b)
-  (if (= b 0)
-      a
-      (gcd b (remainder a b))))
 
 ; 1.2.6 - Example: Testing for Primality
 
@@ -86,8 +65,6 @@
       0
       (+ (term a)
          (sum term (next a) next b))))
-
-(define (inc n) (+ n 1))
 
 (define (integral f a b dx)
   (define (add-dx x) (+ x dx))
